@@ -1,9 +1,9 @@
 :root{
-    --cor-fundo:#ff0000;
-    --cor-principal:#000000; 
+    --cor-fundo:#00ff73b9;
+    --cor-principal:#0bf01e; 
     --cor-secundaria:#000000;
-    --cor-destaque:#fff700;
-    --cor-texto:#0d00ff;
+    --cor-destaque:#111110;
+    --cor-texto:#ffffff;
 }
 body{
     background-color: var(--cor-fundo);
@@ -16,4 +16,31 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
+}
+.caixa-principal{
+    background-color: var(--cor-principal);
+    opacity: 0.8;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+h1{
+    color: var(--cor-destaque);
+}
+button{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
